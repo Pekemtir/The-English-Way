@@ -11,14 +11,14 @@ function startSession(qs,o){qs=qs.filter(Boolean);if(!qs.length){toast('No hay p
 function qHead(q){const total=SE.qs.length;return'<div class="qtop"><button class="x" data-a="quit" aria-label="Salir">✕</button><div class="prog"><i style="width:'+Math.round(SE.i/total*100)+'%"></i></div><div class="combo">'+(SE.combo>1?'×'+SE.combo:'')+'</div></div>'+'<div class="qkind">'+esc(q.kind||'')+' · '+(SE.i+1)+'/'+total+'</div>'}
 function showQ(){const q=SE.qs[SE.i];if(!q)return endSession();const A=$('#app');SE.cur=q;SE.locked=false;
   let h=qHead(q);
-  if(q.k==='flash'){h+='<div class="flash" id="fl" data-a="flip" tabindex="0" role="button"><div class="big">'+(q.em||'')+'</div><div class="ca">'+esc(q.ca)+'</div><div class="bk" id="bk" hidden>'+esc(q.es)+'</div><small id="fh">Toca para ver el significado</small></div><div class="row" style="margin-top:12px;justify-content:center">'+spk(q.ca)+'</div><div class="fb" id="fbb" hidden><button class="btn sec" data-a="fno">Encara no</button><button class="btn" data-a="fyes">Ho sabia</button></div>';
+  if(q.k==='flash'){h+='<div class="flash" id="fl" data-a="flip" tabindex="0" role="button"><div class="big">'+(q.em||'')+'</div><div class="ca">'+esc(q.ca)+'</div><div class="bk" id="bk" hidden>'+esc(q.es)+'</div><small id="fh">Toca para ver el significado</small></div><div class="row" style="margin-top:12px;justify-content:center">'+spk(q.ca)+'</div><div class="fb" id="fbb" hidden><button class="btn sec" data-a="fno">Todavía no</button><button class="btn" data-a="fyes">Lo sabía</button></div>';
     A.innerHTML=h;setTimeout(()=>say(q.ca),150);return}
   if(q.k==='build'){h+='<div class="prompt">'+esc(q.es)+'</div><p class="muted">Ordena las palabras en inglés.</p><div class="line" id="ln"></div><div class="bank" id="bk">'+shuf(q.tok.concat(q.extra||[]).map((w,i)=>({w,i}))).map(o=>'<button class="wt" data-a="wt" data-v="'+o.i+'">'+esc(o.w)+'</button>').join('')+'</div><button class="btn block" id="ck" data-a="check" disabled>Comprobar</button>';
     SE.line=[];A.innerHTML=h+'<div class="spacer"></div>';return}
   const sayBtn=q.say?'<button class="spk" data-a="say" data-v="'+esc(q.say)+'" aria-label="Escuchar">🔊</button><button class="spk" data-a="slow" data-v="'+esc(q.say)+'" aria-label="Escuchar despacio">🐢</button>':'';
   h+='<div class="prompt">'+(q.em?'<span class="big">'+q.em+'</span>':'')+(q.hide?'<span class="muted" style="font-size:22px">'+q.p+'</span>':q.p)+sayBtn+'</div>';
   if(q.k==='choice'){const ops=shuf([q.ans].concat(q.opts));h+='<div class="opts">'+ops.map(o=>'<button class="opt" data-a="pick" data-v="'+esc(o)+'">'+esc(o)+'</button>').join('')+'</div>'}
-  else{h+='<input class="typebox" id="tb" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Respuesta"><div class="row" style="margin-top:12px"><button class="btn grow" id="ck" data-a="check">Comprobar</button>'+(q.h&&!SE.o.test?'<button class="btn sec" data-a="hint">💡</button>':'')+'<button class="btn sec" data-a="idk">No ho sé</button></div><div class="muted" id="hn" style="margin-top:8px"></div>'}
+  else{h+='<input class="typebox" id="tb" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Respuesta"><div class="row" style="margin-top:12px"><button class="btn grow" id="ck" data-a="check">Comprobar</button>'+(q.h&&!SE.o.test?'<button class="btn sec" data-a="hint">💡</button>':'')+'<button class="btn sec" data-a="idk">No lo sé</button></div><div class="muted" id="hn" style="margin-top:8px"></div>'}
   A.innerHTML=h+'<div class="spacer"></div>';
   if(q.say)setTimeout(()=>say(q.say),200);
   const tb=$('#tb');if(tb){tb.focus();tb.addEventListener('keydown',e=>{if(e.key==='Enter')ACT.check()})}}
@@ -28,13 +28,13 @@ function sheet(ok,q,note,given){const old=$('#sheet');if(old)old.remove();const 
   if(!ok)h+='<p>Respuesta correcta: <b>'+esc(ansTxt)+'</b>'+(q.sayAns||q.k==='build'?' '+spk(ansTxt):'')+'</p>'+(given?'<small>Has escrito: '+esc(given)+'</small>':'');
   if(note)h+='<p>'+esc(note)+'</p>';
   const ex=q.e||q.tip;if(ex&&!SE.o.test)h+='<p>'+(q.e?esc(q.e):esc(q.tip))+'</p>';
-  h+='<button class="btn block" data-a="next" id="nx">Continua</button></div>';d.innerHTML=h;document.body.appendChild(d);
+  h+='<button class="btn block" data-a="next" id="nx">Continúa</button></div>';d.innerHTML=h;document.body.appendChild(d);
   const nx=$('#nx');if(nx)nx.focus()}
 function record(ok,q){SE.tot++;S.stat.tot++;if(q.key&&q.key.slice(0,2)==='w:')bump(q.key.slice(2),ok);
   if(q.blk!=null){const b=SE.blk[q.blk]||(SE.blk[q.blk]={ok:0,tot:0});b.tot++;if(ok)b.ok++}
   if(ok){SE.ok++;S.stat.ok++;SE.combo++;SE.max=Math.max(SE.max,SE.combo);if(q.verb)S.stat.verb++;const x=SE.o.per!=null?SE.o.per:10;SE.xp+=x+(SE.combo>=5?2:0);
     if(q.key&&S.weak[q.key]){delete S.weak[q.key]}}
-  else{SE.combo=0;if(q.key&&!SE.o.test){S.weak[q.key]=(S.weak[q.key]||0)+1}
+  else{SE.combo=0;(SE.miss=SE.miss||[]);if(!SE.miss.some(m=>m.p===(q.p||q.es)&&m.a===q.ans))SE.miss.push({p:String(q.p||q.es||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim(),a:q.ans||'',e:q.e||q.tip||''});if(q.key&&!SE.o.test){S.weak[q.key]=(S.weak[q.key]||0)+1}
     if(!SE.o.test&&!SE.o.noRetry&&!q._r&&SE.i<SE.qs.length+3){const c=Object.assign({},q,{_r:1});SE.qs.push(c)}}
   save()}
 function finishQ(ok,q,note,given){SE.locked=true;record(ok,q);sheet(ok,q,note,given)}
@@ -70,7 +70,7 @@ function leaveSession(){document.body.classList.remove('in-session');try{speechS
 function endSession(){const o=SE.o;const acc=SE.tot?SE.ok/SE.tot:0;let bonus=0;
   if(!o.test&&acc>=.8)bonus=o.bonus!=null?o.bonus:15;
   addXP(SE.xp+bonus);
-  const res={acc,ok:SE.ok,tot:SE.tot,xp:SE.xp+bonus,blk:SE.blk,max:SE.max};
+  const res={acc,ok:SE.ok,tot:SE.tot,xp:SE.xp+bonus,blk:SE.blk,max:SE.max,miss:SE.miss||[]};
   if(o.onDone)o.onDone(res);
   leaveSession();
   const pct=Math.round(acc*100);

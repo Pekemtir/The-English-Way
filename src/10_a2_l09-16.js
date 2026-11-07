@@ -4,7 +4,7 @@ L(9,'a2','Comparatives and superlatives','Comparativos y superlativos','📈',28
 ["Formar el comparativo con -er / more … than","Formar el superlativo con the -est / the most","Aprender los irregulares good, bad, far","Comparar personas, cosas y lugares"],
 [
 ["Comparatives","<p>Adjetivos <b>cortos</b> (1 sílaba): <b>-er + than</b>. Adjetivos <b>largos</b>: <b>more + adjetivo + than</b>.</p>",mt(["Adjective","Comparative"],[["tall","taller than"],["big","bigger than"],["easy","easier than"],["expensive","more expensive than"],["interesting","more interesting than"]]),[["My brother is taller than me.","Mi hermano es más alto que yo."],["This phone is more expensive than that one.","Este móvil es más caro que ese."]],"Ortografía: <b>big → bigger</b> (duplica), <b>easy → easier</b> (y → i), <b>nice → nicer</b>."],
-["Superlatives","<p>Adjetivos cortos: <b>the -est</b>. Largos: <b>the most</b>. Siempre con <b>the</b>.</p>",mt(["Adjective","Superlative"],[["tall","the tallest"],["big","the biggest"],["easy","the easiest"],["expensive","the most expensive"],["interesting","the most interesting"]]),[["Mount Everest is the highest mountain in the world.","El Everest es la montaña más alta del mundo."],["It was the most boring film I’ve ever seen.","Fue la película más aburrida que he visto."]],"Después del superlativo: <b>in</b> + lugar (in the world, in my class) / <b>of</b> + grupo (of all)."],
+["Superlatives","<p>Adjetivos cortos: <b>the -est</b>. Largos: <b>the most</b>. Siempre con <b>the</b>.</p>",mt(["Adjective","Superlative"],[["tall","the tallest"],["big","the biggest"],["easy","the easiest"],["expensive","the most expensive"],["interesting","the most interesting"],["cold","the coldest"]]),[["He is the tallest boy in the class.","Es el chico más alto de la clase."],["It is the coldest day of the year.","Es el día más frío del año."],["Mount Everest is the highest mountain in the world.","El Everest es la montaña más alta del mundo."],["It was the most boring film I’ve ever seen.","Fue la película más aburrida que he visto."]],"Después del superlativo: <b>in</b> + lugar (in the world, in my class) / <b>of</b> + grupo (of all)."],
 ["Irregular forms","<p>Algunos adjetivos son irregulares:</p>",mt(["Adjective","Comparative","Superlative"],[["good","better","the best"],["bad","worse","the worst"],["far","farther / further","the farthest"],["little","less","the least"],["much / many","more","the most"]]),[["Today is better than yesterday.","Hoy es mejor que ayer."],["This is the worst day of my life.","Este es el peor día de mi vida."]],"Se evita «more better» y «the most best»: ya son comparativo / superlativo."]
 ],
 [["taller","más alto"],["bigger","más grande"],["better","mejor"],["worse","peor"],["the best","el mejor"],["the worst","el peor"],["the most","el más"],["than","que"],["easier","más fácil"],["boring","aburrido"]],
@@ -183,7 +183,7 @@ c("«See you ___ Monday.»","on",["in","at","by"],"On + día."),
 c("«He is ___ school.»","at",["in","on","from"],"At school."),
 c("«The book is ___ the shelf.»","on",["in","at","to"],"On."),
 c("«We walked ___ the river.»","along",["through","at","in"],"Along."),
-c("«She is good ___ maths.»","at",["in","on","of"],"Good at."),
+c("«She is good ___ English.»","at",["in","on","of"],"Good at."),
 c("«He travels ___ train.» (en tren)","by",["in","on","with"],"By train."),
 t("«In the morning, but ___ night.»","at","At night."),
 t("«I live ___ London.»","in","In."),

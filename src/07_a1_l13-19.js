@@ -12,18 +12,18 @@ L(13,'a1','Can and can’t','Poder: can, can’t y las peticiones','💪',22,
 [["can","poder, saber"],["can’t","no poder, no saber"],["swim","nadar"],["drive","conducir"],["speak","hablar"],["play","jugar, tocar"],["Can I…?","¿puedo…?"],["Can you…?","¿puedes…?"],["of course","claro"],["call","llamar"]],
 [
 c("«I ___ swim.»","can",["cans","am can","do can"],"Can + verbo base."),
-c("«She ___ play the piano.»","can",["cans","can to","does can"],"Can no lleva -s."),
+c("«She ___ play tennis.»","can",["cans","can to","does can"],"Can no lleva -s."),
 c("¿Cuál es correcta?","Can he swim?",["Does he can swim?","Can he to swim?","Can he swims?"],"Can + sujeto + verbo base."),
 c("Respuesta corta: «Can you cook?» (no)","No, I can’t.",["No, I don’t.","No, I can’t cook to.","No, I am not."],"Repite can’t."),
 c("Para pedir un café…","Can I have a coffee, please?",["Can I a coffee?","Do I can have coffee?","I can have coffee?"],"Can I have…, please?"),
 c("Para pedir ayuda…","Can you help me, please?",["You can help me?","Do you can help me?","Can you to help me?"],"Can you + verbo base."),
-c("«They can’t ___ today.»","come",["comes","coming","to come"],"Can’t + verbo base."),
+c("«They can’t ___ tomorrow.»","come",["comes","coming","to come"],"Can’t + verbo base."),
 c("Respuesta educada a una petición","Of course",["I have","Yes, I am","I can’t not"],"Of course = claro."),
 t("«He ___ drive a car.» (no sabe)","can’t","Can’t."),
 t("Escribe: «¿puedo abrir la ventana?» (Can ___ open the window?)","I","Can I…?"),
 t("«___ you speak English?»","Can","Can you…?"),
 b("¿Sabes cocinar?","can you cook","","Can + sujeto + verbo."),
-b("No puedo venir hoy","I can’t come today","","Can’t + verbo base.")
+b("No puedo venir mañana","I can’t come tomorrow","","Can’t + verbo base.")
 ],['phone']);
 
 L(14,'a1','Likes and dislikes','Gustos: like, love, hate y want to','❤️',22,
@@ -48,7 +48,7 @@ t("Completa: «I enjoy ___.» (read)","reading","Enjoy + -ing."),
 t("Completa: «She ___ to dance.» (want)","wants","She wants to…"),
 t("«He ___ football on Sundays.» (play)","plays","He plays."),
 b("Me encanta cocinar","I love cooking","","Love + -ing."),
-b("No quiero trabajar hoy","I don’t want to work today","","Don’t want to + verbo.")
+b("No quiero trabajar mañana","I don’t want to work tomorrow","","Don’t want to + verbo.")
 ],['hobbies','animals']);
 
 L(15,'a1','Food and drink','Comida y bebida: some, any, much, many','🍽️',25,
@@ -80,7 +80,7 @@ L(16,'a1','Shopping','De compras: how much, would like y la ropa','🛍️',22,
 ["Preguntar precios con How much…?","Pedir con I’d like… y Can I have…?","Nombrar tiendas y prendas de ropa","Hablar de tallas, colores y formas de pago"],
 [
 ["Shops and clothes","<p>Las tiendas y la ropa que vas a necesitar. Escucha y repite.</p>",mt(["Shops","Clothes"],[[SW("supermarket, bakery, chemist’s, bookshop, market"),SW("shirt, jumper, jacket, dress, trousers, shoes, hat")]]),[["I buy bread at the bakery.","Compro pan en la panadería."],["I need a pair of shoes.","Necesito un par de zapatos."]],"<b>Trousers, jeans, shoes, glasses</b> son siempre plurales: «these trousers are new». Para uno solo se dice <b>a pair of trousers</b>."],
-["How much?","<p>Para preguntar el precio: <b>How much is…?</b> (singular) y <b>How much are…?</b> (plural). Para decirlo: <b>It’s</b> / <b>They’re</b> + precio.</p>",mt(["Question","Answer"],[["How much is this jumper?","It’s thirty pounds."],["How much are these shoes?","They’re fifty-five pounds."],["How much is it altogether?","It’s forty euros."]]),[["How much is the coffee? – It’s two pounds.","¿Cuánto cuesta el café? – Dos libras."],["How much are the trousers? – They’re twenty pounds.","¿Cuánto cuestan los pantalones? – Veinte libras."]],"El precio con decimales: <b>£4.50</b> = four pounds fifty. Para <b>€</b> se dice <b>euros</b>."],
+["How much?","<p>Para preguntar el precio: <b>How much is…?</b> (singular) y <b>How much are…?</b> (plural). Para decirlo: <b>It’s</b> / <b>They’re</b> + precio.</p>",mt(["Question","Answer"],[["How much is this jumper?","It’s thirty pounds."],["How much are these shoes?","They’re fifty-five pounds."],["How much is it altogether?","It’s forty euros."]]),[["How much is the coffee? – It’s two pounds.","¿Cuánto cuesta el café? – Dos libras."],["How much are the trousers? – They’re twenty pounds.","¿Cuánto cuestan los pantalones? – Veinte libras."],["This jumper is expensive but that one is cheap.","Este jersey es caro pero ese es barato."]],"El precio con decimales: <b>£4.50</b> = four pounds fifty. Para <b>€</b> se dice <b>euros</b>."],
 ["Would like","<p>Para pedir algo con educación se usa <b>I’d like…</b> (= I would like). Es más educado que <b>I want</b>. La pregunta es <b>Would you like…?</b></p>",mt(["Use","Example"],[["pedir","I’d like a coffee, please."],["ofrecer","Would you like some tea?"],["aceptar","Yes, please."],["rechazar","No, thank you."]]),[["I’d like two tickets, please.","Querría dos entradas, por favor."],["Would you like a bag? – No, thanks.","¿Quiere una bolsa? – No, gracias."]],"Con <b>would like</b> el verbo siguiente va con <b>to</b>: «I’d like <b>to</b> try it on» (me gustaría probármelo)."],
 ["Size, colour, payment","<p>Para comprar ropa vas a necesitar preguntar por la talla y el color, y decir cómo pagas.</p>",mt(["You want to say…","English"],[["¿Tiene otra talla?","Have you got a bigger size?"],["¿Puedo probármelo?","Can I try it on?"],["Pago con tarjeta","I’d like to pay by card."],["Pago en efectivo","I’d like to pay in cash."]]),[["I’d like a medium T-shirt, please.","Querría una camiseta de talla mediana."],["Can I try these shoes on?","¿Puedo probarme estos zapatos?"]],"Una tienda <b>closed</b> (cerrada) / <b>open</b> (abierta). En Reino Unido las rebajas son <b>the sales</b>."]
 ],
