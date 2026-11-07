@@ -2556,7 +2556,7 @@ function dictRes(){const q=norm(($('#dq')||{value:''}).value);const R=$('#dres')
   R.innerHTML=r.length?r.map(dRow).join(''):'<div class="muted">Ningún resultado.</div>'}
 const dRow=e=>'<div class="hit">'+spk(e.ca)+'<span style="font-size:20px">'+(e.em||'')+'</span><b'+(e.kind==='v'?' data-a="verb" data-v="'+esc(e.ca)+'" style="cursor:pointer;color:var(--yel)"':'')+'>'+esc(e.ca)+'</b><span class="es">'+esc(e.es)+'</span></div>';
 function verbRes(){const q=norm(($('#vq')||{value:''}).value);const R=$('#vres');if(!R)return;
-  const f=DT.vf;const ok=v=>f==='all'||(f==='x'?v.kind==='x':v.kind!=='x');
+  const f=DT.vf;const ok=v=>f==='all'||(f==='x'?v.irregular:!v.irregular);
   const l=VLIST.filter(i=>ok(VERBS[i])&&(!q||norm(i).includes(q)||norm(VERBS[i].es).includes(q)));
   R.innerHTML=l.length?l.map(i=>'<button class="hit" style="width:100%;background:none;border:0;border-bottom:1px dashed var(--line);text-align:left;color:inherit" data-a="verb" data-v="'+esc(i)+'"><b>'+esc(i)+'</b><span class="es">'+esc(VERBS[i].es)+'</span></button>').join(''):'<div class="muted">Ningún verbo.</div>'}
 ACT.dtab=v=>{DT.tab=v;showCur()};ACT.vf=v=>{DT.vf=v;showCur()};
