@@ -173,7 +173,8 @@ L(24,'a2','A2 review and writing','Repaso de A2: emails y conectores','✉️',3
 [
 ["Linking words","<p>Los conectores ordenan las ideas:</p>",mt(["Linker","Use","Example"],[["and","añadir","I like tea and coffee."],["but","contraste","I like tea but I don’t like coffee."],["so","resultado","I was tired, so I went to bed."],["because","causa","I stayed in because it rained."],["although","contraste","Although it was cold, we went out."],["however","contraste (frase nueva)","It was cold. However, we went out."]]),[["I was ill, so I didn’t go to work.","Estaba enfermo, así que no fui a trabajar."],["Although he was tired, he kept working.","Aunque estaba cansado, siguió trabajando."]],"<b>Because</b> + causa; <b>so</b> + resultado. No uses «because» y «so» juntos."],
 ["Writing emails","<p>Estructura de un email:</p>",mt(["Informal","Formal"],[["Hi Anna,","Dear Mr Brown,"],["Thanks for your email.","Thank you for your email."],["Can you send me…?","Could you please send me…?"],["See you soon!","I look forward to hearing from you."],["Love, / Best, Tom","Yours sincerely, Tom Black"]]),[["Hi Sam, thanks for the invitation. I’d love to come! Best, Eva","Hola Sam, gracias por la invitación. ¡Me encantaría ir! Un saludo, Eva"]],"<b>Dear Sir or Madam … Yours faithfully</b> si no sabes el nombre; <b>Dear Mr X … Yours sincerely</b> si lo sabes."],
-["Review","<p>Elige el tiempo correcto según el marcador:</p>",mt(["Marker","Tense"],[["yesterday, ago","past simple"],["at that moment, while","past continuous"],["ever, never, just, since, for","present perfect"],["tomorrow (plan)","going to / present continuous"],["if","first conditional"]]),[["Last summer we went to Italy. Have you ever been there? – No, but I’m going to go next year.","El verano pasado fuimos a Italia. ¿Has estado alguna vez? – No, pero iré el año próximo."]],"Has terminado A2: ¡haz el <b>test de nivel</b>!"]
+["Review","<p>Elige el tiempo correcto según el marcador:</p>",mt(["Marker","Tense"],[["yesterday, ago","past simple"],["at that moment, while","past continuous"],["ever, never, just, since, for","present perfect"],["tomorrow (plan)","going to / present continuous"],["if","first conditional"]]),[["Last summer we went to Italy. Have you ever been there? – No, but I’m going to go next year.","El verano pasado fuimos a Italia. ¿Has estado alguna vez? – No, pero iré el año próximo."]],"Has terminado A2: ¡haz el <b>test de nivel</b>!"],
+["Irregular verbs: final review","<p>Repasa los irregulares más usados. Cubre las columnas y di el pasado y el participio de cada uno.</p>",mt(["Base","Past simple","Participio","Español"],[["be","was / were",SS("been"),"ser, estar"],["do","did",SS("done"),"hacer"],["go","went",SS("gone"),"ir"],["have","had",SS("had"),"tener"],["see","saw",SS("seen"),"ver"],["take","took",SS("taken"),"tomar"],["make","made",SS("made"),"hacer"],["get","got",SS("got"),"conseguir"],["give","gave",SS("given"),"dar"],["know","knew",SS("known"),"saber"],["think","thought",SS("thought"),"pensar"],["buy","bought",SS("bought"),"comprar"],["write","wrote",SS("written"),"escribir"],["eat","ate",SS("eaten"),"comer"],["drink","drank",SS("drunk"),"beber"],["speak","spoke",SS("spoken"),"hablar"],["come","came",SS("come"),"venir"],["say","said",SS("said"),"decir"],["tell","told",SS("told"),"contar"],["sleep","slept",SS("slept"),"dormir"],["fly","flew",SS("flown"),"volar"],["break","broke",SS("broken"),"romper"]]),[["I have eaten, but I didn’t drink anything.","He comido, pero no bebí nada."]],"Para practicar más: Dictionary → Verbs → Irregulares, y la práctica de verbos."]
 ],
 [["but","pero"],["so","así que"],["because","porque"],["although","aunque"],["however","sin embargo"],["dear","querido"],["yours sincerely","atentamente"],["look forward to","tener ganas de"],["invitation","invitación"],["review","repaso"]],
 [
@@ -189,7 +190,17 @@ t("«Although he was tired, he kept ___ .» (work, -ing)","working","Working."),
 t("Pasado de «go»","went","Went."),
 t("«Look ___ to hearing from you.» (forward)","forward","Look forward to."),
 b("Estaba cansado así que me fui a la cama","I was tired so I went to bed","","So = resultado."),
-b("Me encantaría ir","I would love to come","","I’d love to.")
+b("Me encantaría ir","I would love to come","","I’d love to."),
+c("Pasado de «teach»","taught",["teached","taughten","tought"],"Teach → taught."),
+c("Participio de «take»","taken",["took","taked","takened"],"Take → took → taken."),
+c("Participio de «go»","gone",["went","goed","goen"],"Go → went → gone."),
+c("Pasado de «fly»","flew",["flied","flown","flyed"],"Fly → flew → flown."),
+c("«I have already ___ my homework.» (do)","done",["did","do","doing"],"Do → did → done."),
+c("«Yesterday she ___ a letter.» (write)","wrote",["written","write","writed"],"Con yesterday, pasado simple."),
+t("Participio de «see»","seen","See → saw → seen."),
+t("Pasado de «give»","gave","Give → gave → given."),
+t("Participio de «eat»","eaten","Eat → ate → eaten."),
+b("Hemos comido y bebido","we have eaten and drunk","","Participios: eaten, drunk.")
 ],[]);
 
 /* Mapa de temas desbloqueados por lección A2 */
