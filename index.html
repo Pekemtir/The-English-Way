@@ -193,6 +193,7 @@ function addV(inf,es,past,pp,o){
     going:BE_PR.map(a=>a+' going to '+inf)
   };
   v.s3=pr[2];v.ing=g;v.pa=pa;v.pp=part;
+  v.irregular=!!past&&(past!==edf(inf,o.d)||part!==pa);
   VERBS[inf]=v;return v;
 }
 /* ---- verbos regulares (se cierra con _ si necesitan doblar la última consonante: stop_) ---- */
@@ -2558,12 +2559,13 @@ const dRow=e=>'<div class="hit">'+spk(e.ca)+'<span style="font-size:20px">'+(e.e
 function verbRes(){const q=norm(($('#vq')||{value:''}).value);const R=$('#vres');if(!R)return;
   const f=DT.vf;const ok=v=>f==='all'||(f==='x'?v.irregular:!v.irregular);
   const l=VLIST.filter(i=>ok(VERBS[i])&&(!q||norm(i).includes(q)||norm(VERBS[i].es).includes(q)));
-  R.innerHTML=l.length?l.map(i=>'<button class="hit" style="width:100%;background:none;border:0;border-bottom:1px dashed var(--line);text-align:left;color:inherit" data-a="verb" data-v="'+esc(i)+'"><b>'+esc(i)+'</b><span class="es">'+esc(VERBS[i].es)+'</span></button>').join(''):'<div class="muted">Ningún verbo.</div>'}
+  R.innerHTML=l.length?l.map(i=>'<button class="hit" style="width:100%;background:none;border:0;border-bottom:1px dashed var(--line);text-align:left;color:inherit" data-a="verb" data-v="'+esc(i)+'"><b>'+esc(i)+'</b>'+(VERBS[i].irregular?' <small style="color:var(--yel)">'+esc(VERBS[i].pa)+' · '+esc(VERBS[i].pp)+'</small>':'')+'<span class="es">'+esc(VERBS[i].es)+'</span></button>').join(''):'<div class="muted">Ningún verbo.</div>'}
 ACT.dtab=v=>{DT.tab=v;showCur()};ACT.vf=v=>{DT.vf=v;showCur()};
 document.addEventListener('input',e=>{if(e.target.id==='dq')dictRes();if(e.target.id==='vq')verbRes()});
 let VT={t:'pres'};
 V.verb=inf=>{const v=VERBS[inf];if(!v.T[VT.t])VT.t='pres';const t=VT.t;const nm=VT_NAMES[t];const rows=v.T[t];const P=t==='imper'?IMPER_P:PRON,PE=t==='imper'?IMPER_ES:PRON_ES;
-  let h='<h1>'+esc(inf)+' '+spk(inf)+'</h1><div class="muted">'+esc(v.es)+(v.pn?' · pronominal':'')+' · participio: <b>'+esc(v.pp)+'</b></div>';
+  let h='<h1>'+esc(inf)+' '+spk(inf)+'</h1><div class="muted">'+esc(v.es)+(v.irregular?' · <b>irregular</b>':' · regular')+'</div>';
+  h+='<div class="card tw"><b>Formas principales</b><table class="conj"><tbody><tr><th>Base</th><th>3.ª pers.</th><th>-ing</th><th>Past simple</th><th>Participio</th></tr><tr>'+[inf,v.s3,v.ing,v.pa,v.pp].map(x=>'<td'+(v.irregular&&(x===v.pa||x===v.pp)&&x!==inf+'ed'?' style="font-weight:800;color:var(--yel)"':'')+'>'+esc(x)+'</td>').join('')+'</tr></tbody></table><div class="muted" style="margin-top:6px">'+spk(inf)+' '+spk(v.pa)+' '+spk(v.pp)+'</div></div>';
   h+='<div class="pills">'+TENSES.filter(x=>v.T[x]).map(x=>'<button class="pill '+(x===t?'on':'')+'" data-a="vt" data-v="'+x+'">'+VT_NAMES[x][0]+'</button>').join('')+'</div>';
   h+='<div class="card"><b>'+nm[1]+'</b><div class="muted">'+nm[2]+'</div></div><div class="card tw"><table class="conj"><tbody>'+rows.map((f,i)=>f?'<tr><th scope="row">'+P[i]+'<br><small>'+PE[i]+'</small></th><td>'+esc(f)+'</td><td>'+spk(f)+'</td></tr>':'').join('')+'</tbody></table></div>';
   h+='<button class="btn block" data-a="vpractice" data-v="'+esc(inf)+'">🧠 Practica «'+esc(inf)+'»</button>';return h};

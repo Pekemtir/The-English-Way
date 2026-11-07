@@ -49,6 +49,7 @@ function addV(inf,es,past,pp,o){
     going:BE_PR.map(a=>a+' going to '+inf)
   };
   v.s3=pr[2];v.ing=g;v.pa=pa;v.pp=part;
+  v.irregular=!!past&&(past!==edf(inf,o.d)||part!==pa);
   VERBS[inf]=v;return v;
 }
 /* ---- verbos regulares (se cierra con _ si necesitan doblar la última consonante: stop_) ---- */
