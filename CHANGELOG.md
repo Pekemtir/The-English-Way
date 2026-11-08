@@ -1,5 +1,8 @@
 # Changelog · The English Way
 
+## v1.10 (2026-11-08)
+- **Repetición espaciada** (1, 3, 7, 21 y 45 días) sobre las palabras: tarjeta «Spaced review» en Home y baldosa en Practice (`src/20d_srs.js`, enganchada a `bump`). Fallo = vuelve mañana; acierto antes de tiempo no avanza. Probado en node con hook de depuración; NO en navegador real.
+
 ## v1.9 (2026-11-08)
 - **Aprobado de lección al 80 %** (antes 85 % en la versión anterior, 60 % al principio). La migración pasa a borrar solo las aprobadas con menos de 80 %. Quien ya abrió la versión anterior (marca `mig85`) ya perdió las de 80-84 %: no se recuperan solas, hay que repetirlas o restaurar una copia de seguridad.
 
