@@ -20,7 +20,7 @@ Todo funciona en tu dispositivo. Sin cuentas, anuncios, cookies ni rastreo. El p
 - **Código**: MIT (ver `LICENSE`).
 - **Contenidos del curso** (textos, ejercicios, vocabulario, diccionario): obra original, licencia [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 - **Tipografías** Patrick Hand y Nunito (incrustadas): SIL Open Font License 1.1.
-- El temario se ha contrastado con descripciones públicas de niveles A1/A2 solo como referencia de orden y estructura; **no se ha copiado ni traducido ningún texto** de manuales, exámenes ni diccionarios.
+- El temario se ha contrastado con las escalas A1/A2 del Volumen Complementario del MCER (Consejo de Europa, 2020) y con un programa público de A2, solo como referencia de contenidos; **no se ha copiado ni traducido ningún texto** de manuales, exámenes ni diccionarios.
 - Proyecto independiente, **sin afiliación ni aval** de ninguna entidad oficial. No es un curso oficial ni emite certificados.
 
 ## Desarrollo

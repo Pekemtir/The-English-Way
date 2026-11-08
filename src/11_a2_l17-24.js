@@ -149,6 +149,7 @@ L(23,'a2','Used to and polite requests','Used to, peticiones educadas y pregunta
 [
 ["Used to","<p><b>Used to + infinitivo</b> = antes solía… (ya no). Negativa: <b>didn’t use to</b>. Pregunta: <b>Did you use to…?</b></p>",mt(["Example","Meaning"],[["I used to live in Paris.","Antes vivía en París."],["She didn’t use to eat fish.","Antes no comía pescado."],["Did you use to play tennis?","¿Solías jugar al tenis?"]]),[["We used to go to the beach every summer.","Antes íbamos a la playa cada verano."],["He used to smoke, but he stopped.","Solía fumar, pero lo dejó."]],"No confundir con <b>be used to + -ing</b> (estar acostumbrado a): «I’m used to getting up early»."],
 ["Polite requests","<p>Para pedir con educación:</p>",mt(["Phrase","Example"],[["Could you…?","Could you open the door?"],["Would you mind + -ing?","Would you mind closing the window?"],["Do you mind if I…?","Do you mind if I sit here?"],["I’d like…","I’d like a coffee, please."]]),[["Would you mind waiting a moment?","¿Le importaría esperar un momento?"],["Could I have the bill, please?","¿Me trae la cuenta, por favor?"]],"Respuestas a «Do you mind…?»: <b>Not at all</b> (no me importa) o <b>I’d rather you didn’t</b>."],
+["Opinions, agreeing and disagreeing","<p>Para dar tu opinión y reaccionar a la de otros:</p>",mt(["Function","Phrase"],[["Give an opinion","I think… / In my opinion… / I believe…"],["Ask for an opinion","What do you think? / Do you agree?"],["Agree","I agree. / Me too. / So do I. / Exactly!"],["Disagree politely","I’m not sure. / I don’t agree. / I see what you mean, but…"],["Ask for repetition","Sorry, could you say that again? / What does … mean?"]]),[["I think English is easy. – I’m not sure. I find the verbs difficult.","Creo que el inglés es fácil. – No estoy seguro. Los verbos me parecen difíciles."],["Sorry, could you say that again, please?","Perdona, ¿podrías repetirlo, por favor?"]],"Mejor «I don’t agree» + razón que solo «No». <b>So do I</b> = yo también (si la frase es afirmativa); <b>Neither do I</b> = yo tampoco."],
 ["Indirect questions","<p>Las preguntas indirectas (más corteses) <b>no invierten</b> el orden: <b>Could you tell me where the station is?</b></p>",mt(["Direct","Indirect"],[["Where is the station?","Could you tell me where the station is?"],["What time does it start?","Do you know what time it starts?"],["How much is it?","Can you tell me how much it is?"]]),[["Excuse me, do you know where the toilets are?","Perdone, ¿sabe dónde están los servicios?"]],"En la indirecta no se usa do / does / did: «what time <b>it starts</b>»."]
 ],
 [["used to","solía"],["mind","importar"],["not at all","en absoluto"],["I’d rather","preferiría"],["bill","cuenta"],["could you tell me","¿podría decirme?"],["excuse me","perdone"],["polite","educado"],["waiting","esperando"],["toilets","servicios"]],
@@ -165,7 +166,14 @@ t("«I ___ to go every summer.» (used)","used","Used."),
 t("«He didn’t ___ to smoke.» (use)","use","Use."),
 t("«Would you ___ waiting?» (mind)","mind","Mind."),
 b("Antes vivía en París","I used to live in Paris","","Used to + live."),
-b("¿Podría decirme dónde está la estación","could you tell me where the station is","","Orden afirmativo.")
+b("¿Podría decirme dónde está la estación","could you tell me where the station is","","Orden afirmativo."),
+c("Quieres dar tu opinión:","I think it’s a good idea.",["I am think good idea.","It think I good.","I thinking idea."],"I think + frase."),
+c("Estás de acuerdo con alguien:","I agree.",["I am not agree.","I agrees.","I’m agree."],"I agree."),
+c("Quieres corregir con educación:","I’m not sure.",["You are wrong!","Never!","Stop!"],"Desacuerdo educado."),
+c("«I like pizza.» – «___ do I.» (yo también)","So",["Neither","Too","Also"],"So do I."),
+c("Pides que repitan:","Could you say that again?",["Say again you!","You say again?","Repeat now."],"Petición educada."),
+t("«What do you ___ ?» (opinión: think)","think","What do you think?"),
+b("En mi opinión es fácil","in my opinion it is easy","","In my opinion + frase.")
 ],[]);
 
 L(24,'a2','A2 review and writing','Repaso de A2: emails y conectores','✉️',35,

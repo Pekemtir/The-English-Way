@@ -1,5 +1,9 @@
 # Changelog · The English Way
 
+## v1.6 (2026-11-08)
+- Contraste con el MCER (Volumen Complementario 2020, escalas A1/A2): nuevos pasos de sugerencias, invitaciones y disculpas (A2 L12) y de opiniones, acuerdo y petición de repetición (A2 L23), con +14 ejercicios. Texto legal y README ajustados a las fuentes realmente consultadas.
+- Antes (v1.1): irregulares con tablas por patrones (A1 L24), participios (A2 L4) y repaso (A2 L24); arreglo del filtro Regulares/Irregulares y fichas de verbo.
+
 ## v1.4 (2026-11-08)
 - **Práctica de lección variada** (`src/16b_leccion_mix.js`, `buildLessonQs(l)`): cada intento = 6 preguntas fijas (las 13 escritas a mano, rotadas: primero las menos vistas y las falladas, con ruido al azar) + 6 generadas SOLO con lo que enseña esa lección (frases de ejemplo `ex` y palabras clave `kw`) ⇒ nada se pregunta antes de enseñarse. Generadas: traducir frase (4 opciones), escuchar y elegir significado, completar frase (primera letra + hueco), construir frase, vocabulario en ambos sentidos y escribir la palabra. Distractores: primero de la propia lección, luego de las anteriores.
 - **Antimemorización / imprevisible:** subconjunto distinto cada vez, orden barajado sin dos tipos iguales seguidos, una frase o palabra solo una vez por intento, máx. 2 de cada tipo generado, memoria por lección en `S.lh` (últimas 40 generadas y último intento de cada fija) para no repetir hasta agotar el banco, opciones barajadas al mostrarse.

@@ -77,6 +77,7 @@ L(12,'a2','Might, may, could and offers','Might, may, could y ofrecimientos','�
 [
 ["Possibility","<p><b>Might, may, could</b> + infinitivo expresan posibilidad. Son iguales para todas las personas.</p>",mt(["Example","Meaning"],[["It might rain.","Puede que llueva."],["She may be late.","Quizá llegue tarde."],["It could be dangerous.","Podría ser peligroso."],["He might not come.","Puede que no venga."]]),[["I don’t know where Tom is. He might be at home.","No sé dónde está Tom. Puede que esté en casa."],["We may go to the beach.","Quizá vayamos a la playa."]],"Negativa: <b>might not / may not</b>. No se usan «mightn’t» en conversación habitual."],
 ["Permission and requests","<p>Pedir permiso: <b>Can I…? May I…? Could I…?</b> (de más a menos formal).</p>",mt(["Example","Meaning"],[["Can I use your phone?","¿Puedo usar tu teléfono?"],["May I come in?","¿Puedo pasar? (formal)"],["Could I ask a question?","¿Podría hacer una pregunta?"],["Could you help me?","¿Podría ayudarme?"]]),[["Could you open the window, please?","¿Podría abrir la ventana, por favor?"],["Can I borrow your pen?","¿Me prestas tu bolígrafo?"]],"Respuestas: <b>Sure, of course, certainly</b> o <b>Sorry, I’m afraid not</b>."],
+["Suggestions, invitations, apologies","<p>Funciones sociales muy habituales en A2:</p>",mt(["Function","Phrase"],[["Suggest","Let’s go to the cinema. / Why don’t we eat out? / How about going for a walk?"],["Invite","Would you like to come to my party? / Do you want to join us?"],["Accept","Great idea! / Yes, I’d love to."],["Refuse politely","Sorry, I can’t. I’m busy. / Maybe another time."],["Apologise","I’m sorry I’m late. / Sorry about that."],["Reply to an apology","That’s OK. / Don’t worry. / No problem."]]),[["How about going to the beach? – Good idea!","¿Qué tal ir a la playa? – ¡Buena idea!"],["Would you like to come with us? – I’d love to, but I can’t.","¿Quieres venir con nosotros? – Me encantaría, pero no puedo."]],"Tras <b>Let’s</b> va infinitivo sin to (Let’s go); tras <b>How about</b> / <b>Why don’t we</b>: -ing / infinitivo (How about going…? Why don’t we go…?)."],
 ["Offers","<p>Ofrecer ayuda: <b>Shall I…? Can I…? I’ll…</b></p>",mt(["Example","Meaning"],[["Shall I carry your bag?","¿Te llevo la bolsa?"],["Can I help you?","¿Puedo ayudarte?"],["Shall we go?","¿Vamos?"],["I’ll open the door.","Yo abro la puerta."]]),[["It’s hot. Shall I open a window? – Yes, please.","Hace calor. ¿Abro una ventana? – Sí, por favor."],["Shall we have lunch?","¿Comemos?"]],"<b>Shall I / Shall we</b> solo con I y we (sugerencia / ofrecimiento)."]
 ],
 [["might","puede que"],["may","quizá"],["could","podría"],["shall","(ofrecimiento)"],["permission","permiso"],["borrow","pedir prestado"],["dangerous","peligroso"],["I’m afraid not","me temo que no"],["certainly","por supuesto"],["offer","ofrecer"]],
@@ -93,7 +94,14 @@ t("«It ___ be dangerous.» (could)","could","Could."),
 t("«___ I use your phone?» (informal)","Can","Can."),
 t("Verbo tras might: «She might ___.» (come)","come","Infinitivo."),
 b("Puede que llueva","it might rain","","Might + rain."),
-b("¿Abro la ventana?","shall I open the window","","Shall I + open.")
+b("¿Abro la ventana?","shall I open the window","","Shall I + open."),
+c("Sugieres ir al cine:","Let’s go to the cinema.",["Let’s going to the cinema.","Let go we cinema.","We let go cinema."],"Let’s + infinitivo."),
+c("«How about ___ for a walk?»","going",["go","to go","went"],"How about + -ing."),
+c("Alguien te invita y aceptas:","Great idea!",["Sorry, I can’t.","I’m sorry I’m late.","That’s OK."],"Aceptar."),
+c("Te pides disculpas por llegar tarde:","I’m sorry I’m late.",["Great idea!","Why don’t we?","How about you?"],"Disculpa."),
+c("Alguien se disculpa. Respondes:","That’s OK.",["Let’s go.","Yes, I’d love to.","How about going?"],"Responder a una disculpa."),
+t("«Why don’t we ___ out?» (eat)","eat","Why don’t we + infinitivo."),
+b("¿Por qué no comemos fuera?","why don’t we eat out","","Why don’t we + eat out.")
 ],[]);
 
 L(13,'a2','Quantifiers','Cantidades: a lot of, much, many, a few, a little','🔢',25,
