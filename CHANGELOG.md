@@ -1,5 +1,8 @@
 # Changelog · The English Way
 
+## v1.8 (2026-11-08)
+- **Migración al 85 %:** al abrir la app (una sola vez, marca `mig85`), las lecciones ya aprobadas con menos de 85 % vuelven a pendientes y hay que repetirlas. Si eso deja el A2 sin cumplir sus condiciones, se vuelve a bloquear. Probado en node con progreso simulado; NO en navegador real.
+
 ## v1.7 (2026-11-08)
 - **Aprobado de lección al 85 %** (antes 60 %): por debajo hay que repetir. Reto diario (60 %) y juegos por dominio (60 %) sin cambios.
 - **+5 preguntas por práctica de lección:** `MIXN` 12 → 17 y `MIXF` 6 → 7 en `src/16b_leccion_mix.js` (7 fijas + 10 generadas). Medido en node con DOM simulado: 50 lecciones × 30 intentos = 17 preguntas, sin duplicados. NO probado en navegador real.
